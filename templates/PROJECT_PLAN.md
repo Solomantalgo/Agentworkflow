@@ -3,6 +3,8 @@
 **Status:** Discovery / Site plan / Directions / Selected / Handoff approved / Build / Review / Complete  
 **Last updated:** [date]  
 **Planning agent:** [name/session]  
+**Assigned client:** [client name; this plan covers this client only]
+**Client project path:** [exact path]
 **Selected package:** [Starter / Standard / Business / Advanced / custom]  
 **Package reference checked:** [date]
 
@@ -112,7 +114,7 @@ For **each of at least three directions**, record its concept, audience fit, vis
 
 ## 8. Implementation prompt
 
-[Write a ready-to-paste prompt pointing the builder to this file and the approved assets.]
+[Write a ready-to-paste prompt naming this client, this file's exact path, and the approved assets. State that the builder is assigned to this client only.]
 
 ## 9. Build review
 

@@ -1,17 +1,17 @@
 # Solomantalgo client site workflow
 
-This workflow separates **planning and design leadership** from full implementation. The initial agent is the planning agent, even when the eventual builder is another Codex agent. The owner makes key scope and visual decisions using concrete previews rather than needing design vocabulary.
+This workflow separates **planning and design leadership** from full implementation. Start a fresh planning agent/session for **one named client project** using `templates/CLIENT_PLANNER_PROMPT.md`. That agent's responsibility ends with that client's project; another client starts with a new planner and a new project plan. The owner makes key scope and visual decisions using concrete previews rather than needing design vocabulary.
 
 ## Core rules
 
 1. Read `BUSINESS_REFERENCE.md` and the current `PACKAGES.md` at the start of every client project.
-2. Create a client-specific plan using `templates/PROJECT_PLAN.md`. Update it as decisions are made. Label unknowns and assumptions.
+2. Create a plan for the assigned client using `templates/PROJECT_PLAN.md`. Put the client's name, project path, and scope at the top. Update it as decisions are made. Label unknowns and assumptions.
 3. Plan the site and its customer journeys **before** visual design. No full implementation begins before the owner chooses a direction and approves the implementation handoff.
 4. Offer at least **three substantially different visual directions** for each new site. A different colour palette on the same layout does not count.
 5. Show a **desktop and mobile home-page image for each direction**. Add preview screens for a central ordering, booking, or other interaction when needed to judge the concept.
 6. The planning agent inventories supplied assets and creates or sources missing visual assets. Use the Codex imagegen skill for suitable new bitmap imagery. Record provenance, usage, and approval in the project plan. Do not invent client branding or factual imagery.
 7. Keep package scope, custom additions, exclusions, domain cost, hosting cost, and other recurring costs explicit. Domain is separate. Confirm hosting per project.
-8. Design to the client's business and audience. Reuse lessons and patterns, not a copied page composition.
+8. Design to the assigned client's business and audience. Reuse lessons and patterns, not another client's identity, content, approvals, or page composition.
 
 ## Stage 1 — Discovery and scope
 
@@ -59,7 +59,7 @@ Refine the selected direction. Update the project plan into a complete handoff w
 - Selected package, included work, custom additions, exclusions, and domain/hosting/third-party cost decisions.
 - Acceptance checks and any remaining approved assumptions.
 
-The planning agent provides a **ready-to-paste implementation prompt** pointing to the handoff file and assets. The prompt tells the builder to implement the approved direction, report deviations or blockers, and show desktop/mobile results. It does not substitute for the handoff file.
+The planning agent provides a **ready-to-paste implementation prompt for this named client only**, pointing to that client's handoff file and assets. The prompt tells the builder to implement the approved direction, report deviations or blockers, and show desktop/mobile results. It does not substitute for the handoff file. Avoid broad instructions such as "build client sites" that could make the implementation agent treat other clients as part of this assignment.
 
 **Decision gate:** Owner approves the handoff before full implementation.
 
@@ -75,4 +75,4 @@ After approval, record useful visual and interaction ideas in `DESIGN_LIBRARY.md
 
 ## Planner's implementation prompt pattern
 
-> Build the client site described in `[project path]/PROJECT_PLAN.md`. Read `AGENTS.md`, `BUSINESS_REFERENCE.md`, `PACKAGES.md`, and `SITE_WORKFLOW.md` first. Use the approved direction and assets linked in the project plan. Implement the stated pages, responsive behavior, motion, and feature flows within the selected package/custom scope. Flag any missing critical facts or conflicts before implementing the affected feature. Capture desktop and mobile screenshots and verify the acceptance checks. Report deviations from the approved previews.
+> You are the implementation agent for **[client name]** only. Build the site described in `[exact path]/PROJECT_PLAN.md`. Read `AGENTS.md`, `BUSINESS_REFERENCE.md`, `PACKAGES.md`, and `SITE_WORKFLOW.md` for shared standards, then follow this client's approved handoff and assets. Implement the stated pages, responsive behavior, motion, and feature flows within this client's selected package/custom scope. Do not import another client's content or design. Flag missing critical facts or conflicts before implementing the affected feature. Capture desktop and mobile screenshots, verify the acceptance checks, and report deviations from this client's approved previews.
