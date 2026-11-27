@@ -38,6 +38,7 @@
 - Required operational details for orders/bookings/payments:
 - Open questions, owner, and resolution date:
 - Assumptions explicitly approved:
+- Supplied documents that require extraction, with status and output path:
 
 ### Decision log
 
@@ -64,6 +65,22 @@ Do not re-ask decisions already recorded here. On a resumed session, check this 
 | | | | | | |
 
 The planner resolves missing required assets before builder handoff. For a real client logo or other specific client-owned reference, ask the owner once if no accessible copy exists. Do not have the builder ask again.
+
+### Source content extracted for implementation
+
+| Source document | Exact path | Extracted content path or plan section | Pages/entries checked | Uncertain entries |
+| --- | --- | --- | --- | --- |
+| | | | | |
+
+Record actual item names, variants, and prices needed for implementation; listing only document categories is insufficient.
+
+### Image coverage
+
+| Site section or item group | Image needed? | Supplied / existing / generated / intentionally text-only | Exact path | Provenance and accuracy note |
+| --- | --- | --- | --- | --- |
+| | | | | |
+
+For missing visuals, consider image generation before handoff. Save generated assets in this client project. Do not present an illustration as a verified photograph of an actual client product.
 
 ## 6. Design exploration
 
@@ -137,7 +154,10 @@ For a new site or requested redesign, record **each of at least three directions
 
 - All essential requirements gathered?
 - Required references and assets accessible at the listed paths?
+- Source documents parsed into usable entries and uncertain items identified?
+- Every planned image slot covered or deliberately text-only?
 - Optional recommendations separated from approved scope?
+- Latest scope and decision log saved, then read back and verified?
 - Builder prompt posted in planner chat on [date]:
 - Builder dispatched by planner or implementation continued in same session:
 - Builder questions resolved through planner:
