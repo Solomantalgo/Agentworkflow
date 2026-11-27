@@ -7,6 +7,7 @@
 **Client project path:** [exact path]
 **Selected package:** [Starter / Standard / Business / Advanced / custom]  
 **Package reference checked:** [date]
+**Work type:** New site or redesign / Focused update to existing site
 
 ## 1. Client and business goal
 
@@ -38,6 +39,14 @@
 - Open questions, owner, and resolution date:
 - Assumptions explicitly approved:
 
+### Decision log
+
+| Date | Question or decision | Owner answer / source | Effect on scope or design |
+| --- | --- | --- | --- |
+| | | | |
+
+Do not re-ask decisions already recorded here. On a resumed session, check this log and the source files first.
+
 ## 4. Site and experience plan
 
 - Sitemap or section map:
@@ -50,13 +59,15 @@
 
 ## 5. Assets
 
-| Asset | Source/provenance | Intended use | Path | Approval |
-| --- | --- | --- | --- | --- |
-| | | | | |
+| Asset or reference | Source/provenance | Intended use | Exact accessible path | Verified accessible? | Approval |
+| --- | --- | --- | --- | --- | --- |
+| | | | | | |
+
+The planner resolves missing required assets before builder handoff. For a real client logo or other specific client-owned reference, ask the owner once if no accessible copy exists. Do not have the builder ask again.
 
 ## 6. Design exploration
 
-For **each of at least three directions**, record its concept, audience fit, visual system, interaction/motion idea, and desktop/mobile home-page preview paths. Add key-flow previews where useful.
+For a new site or requested redesign, record **each of at least three directions**: concept, audience fit, visual system, interaction/motion idea, and desktop/mobile home-page preview paths. Add key-flow previews where useful. For a focused update to an existing site, mark this section "Not applicable — focused update" and use the focused change list in Section 7.
 
 ### Direction A — [name]
 
@@ -112,9 +123,24 @@ For **each of at least three directions**, record its concept, audience fit, vis
 - Known limitations and approved assumptions:
 - Owner approval/date:
 
-## 8. Implementation prompt
+### Focused update to an existing site, if applicable
 
-[Write a ready-to-paste prompt naming this client, this file's exact path, and the approved assets. State that the builder is assigned to this client only.]
+- Existing files and behavior inspected:
+- Exact change list:
+- Behavior and content to preserve:
+- References and assets verified:
+- Remaining unconfirmed facts and treatment:
+- Focused acceptance checks:
+- Owner decision/date, only where needed:
+
+## 8. Builder handoff status
+
+- All essential requirements gathered?
+- Required references and assets accessible at the listed paths?
+- Optional recommendations separated from approved scope?
+- Builder prompt posted in planner chat on [date]:
+- Builder dispatched by planner or implementation continued in same session:
+- Builder questions resolved through planner:
 
 ## 9. Build review
 
